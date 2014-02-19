@@ -12,6 +12,32 @@ Template:       twentytwelve
 /* We must first include the original css from the parent theme */
 @import url("http://www.unfiltered.bullfrog117.com/wp-content/themes/twentytwelve/style.css");
 
+/* BlockQuote Customization (2013-12-19)
+* inspired by http://www.wpbeginner.com/wp-themes/how-to-customize-blockquotes-style-in-wordpress-themes/
+# non-italic fix courtesy of http://wpquestions.com/question/show/id/3724
+----------------------------------------------- */
+blockquote {
+	font-family: Georgia, serif;
+	font-size: 18px;
+	font-style: normal !important;
+	width: 450px;
+	margin: 0.25em 0;
+	line-height: 1.45;
+	position: relative;
+	color: #383838;
+	background:#ececec;
+}
+
+.entry-content blockquote {
+	padding: 3rem 40px;
+}
+
+blockquote cite {
+	float: right;
+	font-style: normal !important;
+}
+
+
 /* Spoiler CSS (courtesy of Steffen Franskoch)
  * http://codesnipp.it/css/pure-css-spoiler-tag
 ----------------------------------------------- */
