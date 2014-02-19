@@ -51,12 +51,26 @@ function spoilerstart($atts, $content = null) {
 }
 add_shortcode("spoilerstart", "spoilerstart");
 
-
 function spoilerend($atts, $content = null) {
 	return '</p>
 	<div class="view-protection bottom"></div>
 </div>';
 }
 add_shortcode("spoilerend", "spoilerend");
+
+/**
+ * Attempting to write a shortcode that will handle the currently single PHP code I have on the site
+ * I mean I see no reason to have a plugin for one post out of thousands that keeps me from using NGG
+ **/
+function dailyblurb($atts, $content = null) {
+	extract(shortcode_atts(array(
+		'source'=>'',
+		'date'=>'',
+	),$atts));
+	$source=esc_attr($source);
+	$date=esc_attr($date);
+	return file_get_contents("http://www.bullfrog117.com/religion/daily-blurb.php?source=".$source."&date=".$date);
+}
+add_shortcode("dailyblurb", "dailyblurb");
 
 ?>
