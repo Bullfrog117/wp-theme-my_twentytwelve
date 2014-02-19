@@ -47,12 +47,14 @@ function spoilerstart($atts, $content = null) {
 	return '<h1>Spoiler Alert! (place and hold your mouse over the bar to see)</h1>
 <div class="spoiler">
 	<div class="view-protection top"></div>
-	<p>';
+	<p>
+	<div style="padding:0px 10px;">';
 }
 add_shortcode("spoilerstart", "spoilerstart");
 
 function spoilerend($atts, $content = null) {
-	return '</p>
+	return '</div>
+	</p>
 	<div class="view-protection bottom"></div>
 </div>';
 }
