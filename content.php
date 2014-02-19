@@ -19,10 +19,20 @@
 			<!--
 				resize the featured image and center it
 				http://codex.wordpress.org/Post_Thumbnails
+				
+				oh, i'm also adding a URL around the image
+				if the custom field is set
+				http://millionclues.com/wordpress-tips/custom-image-and-link-for-each-post-using-custom-fields/
 			-->
 
 			<?php if ( is_single() ) : ?>
-			<?php the_post_thumbnail('large', array('class' => 'aligncenter')); ?>
+			<?php if( get_post_meta($post->ID, "media_external_url", true) ): ?>
+			<a href="<?php echo get_post_meta($post->ID, "media_external_url", true); ?>" target="_blank">
+			<?php the_post_thumbnail('full', array('class' => 'aligncenter media_external_url')); ?>
+			</a>
+			<?php else : ?>
+			<?php the_post_thumbnail('full', array('class' => 'aligncenter')); ?>
+			<?php endif; ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php else : ?>
 			<?php the_post_thumbnail('medium', array('class' => 'aligncenter')); ?>

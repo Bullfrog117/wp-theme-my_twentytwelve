@@ -38,6 +38,11 @@ blockquote cite {
 }
 
 
+.media_external_url {
+	border: solid blue 3px;
+}
+
+
 /* Spoiler CSS (courtesy of Steffen Franskoch)
  * http://codesnipp.it/css/pure-css-spoiler-tag
 ----------------------------------------------- */
