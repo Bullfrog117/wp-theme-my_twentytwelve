@@ -6,6 +6,7 @@
 	Version:        1.0
 	Template:       twentytwelve
 
+
 ##comments.php
 
 Originally I eschewed Jetpack and was trying to have comments be JUST provided by Twitter or Facebook. But I finally realized that wasn't doing anybody any favors and turned Jetpack on. Oh wow, so this file is completely irrelevant to my theme as it currently is! Although as I look at the visual layout and think about what I want the comments section to be, I might be re-activating this. We'll have to see.  
@@ -18,15 +19,19 @@ This file helps me do specific things with posts. In particular with the feature
 
 ##functions.php
 
-This file was the first one I really mucked with as I figured out how to make some of the styles and external links function better within the WordPress shell. 
+This file was the first one I really mucked with as I figured out how to make some of the styles and external links function better within the WordPress shell. Also used it to customize various features/functions of the WordPress Core. 
 
-List of shortcodes: 
+####List of shortcodes: 
 
 * song/songTitle - for external linking to my lyrics database
-
 * spoilerstart/spoilerend - CSS for hiding bits of text (for example spoilers in movie reviews)
-
 * dailyblurb - pulling bits from my daily devotional database
+
+####List of modified functions: 
+
+* my_child_theme_setup
+* custom_excerpt_length
+* new_excerpt_more
 
 
 ##header.php
