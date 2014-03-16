@@ -15,7 +15,7 @@ So here goes!
 
 ~ comments.php ~
 
-Originally I eschewed Jetpack and was trying to have comments be JUST provided by Twitter or Facebook. But I finally realized that wasn't doing anybody any favors and turned Jetpack on. Oh wow, so this file is completely irrelevant to my theme as it currently is! 
+Originally I eschewed Jetpack and was trying to have comments be JUST provided by Twitter or Facebook. But I finally realized that wasn't doing anybody any favors and turned Jetpack on. Oh wow, so this file is completely irrelevant to my theme as it currently is! Although as I look at the visual layout and think about what I want the comments section to be, I might be re-activating this. We'll have to see.  
 
 
 ~ content.php ~
