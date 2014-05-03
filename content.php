@@ -48,7 +48,7 @@
 		</header><!-- .entry-header -->
 
 
-		<?php if ( is_search() || is_home() ) : // Only display Excerpts for Search and Home ?>
+		<?php if ( is_search() || is_home() || is_archive() ) : // Only display Excerpts for Search, Archive, and Home ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->

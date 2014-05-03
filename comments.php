@@ -26,6 +26,7 @@ if ( post_password_required() )
 	<?php // You can start editing here -- including this comment! ?>
 
 <!--
+
         <a href="https://twitter.com/share" class="twitter-share-button" data-via="bullfrog117">Tweet</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
@@ -33,6 +34,7 @@ if ( post_password_required() )
         <div class="fb-like" data-send="true" data-width="450" data-show-faces="true" data-action="recommend" data-colorscheme="light" data-font="tahoma"></div>
 
         <div class="fb-comments" data-href="<?php the_permalink() ?>" data-num-posts="2" data-width="500" data-colorscheme="light"></div>
+
 -->
 
 	<?php if ( have_comments() ) : ?>
