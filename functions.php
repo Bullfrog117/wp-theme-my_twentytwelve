@@ -1,5 +1,16 @@
 <?php
 
+add_action( 'wp_enqueue_scripts', 'my_twentytwelve_enqueue_styles');
+function my_twentytwelve_enqueue_styles() {
+	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/rtl.css' );
+}
+add_action( 'admin_enqueue_scripts', 'my_twentytwelve_admin_enqueue_styles');
+function my_twentytwelve_admin_enqueue_styles() {
+	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/editor-style.css' );
+	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/editor-style-rtl.css' );
+}
+
 // In child themes the functions.php is applied before the parent
 // theme's functions.php. So we need to wait for the parent theme to add
 // it's filter before we can remove it.

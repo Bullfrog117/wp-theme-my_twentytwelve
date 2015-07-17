@@ -10,7 +10,9 @@ Template:       twentytwelve
 
 
 /* We must first include the original css from the parent theme */
+/* No longer recommended as discussed on http://codex.wordpress.org/Child_Themes
 @import url("http://www.unfiltered.bullfrog117.com/wp-content/themes/twentytwelve/style.css");
+*/
 
 /* BlockQuote Customization (2013-12-19)
 * inspired by http://www.wpbeginner.com/wp-themes/how-to-customize-blockquotes-style-in-wordpress-themes/
